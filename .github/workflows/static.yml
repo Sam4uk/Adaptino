@@ -61,6 +61,7 @@ jobs:
                     "url": "https://sam4uk.github.io/Adaptino/Adaptino.zip",
                     "archiveFileName": "Adaptino.zip",
                     "size" : "$(stat -c %s Adaptino.zip)",
+                    "checksum" : "SHA-256:$(sha256sum ./Adaptino.zip | awk '{print $1}')",
                     "boards":
                     [
                       {

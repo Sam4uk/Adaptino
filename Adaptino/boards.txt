@@ -1,0 +1,42 @@
+#############################################################
+#                                                           #
+# @file:    boards.txt                                      #
+# @author:  Sam4uk<sam4uk.site@gmail.com>                   #
+#                                                           #
+############################################################# 
+
+#------------------------------------------------------------
+#                   2560Engine
+#------------------------------------------------------------
+
+2560Engine
+2560Engine.name=2560Engine
+
+2560Engine.vid.0=0x1a86
+2560Engine.pid.0=0x7523
+2560Engine.upload_port.0.vid=0x1a86
+2560Engine.upload_port.0.pid=0x7523
+2560Engine.upload_port.1.board=mega
+
+2560Engine.upload.tool=avrdude
+2560Engine.upload.tool.default=avrdude
+2560Engine.upload.tool.network=arduino_ota
+2560Engine.upload.protocol=wiring
+2560Engine.upload.maximum_size=253952
+2560Engine.upload.maximum_data_size=8192
+2560Engine.upload.speed=115200
+
+2560Engine.bootloader.tool=avrdude
+2560Engine.bootloader.tool.default=avrdude
+2560Engine.bootloader.low_fuses=0xFF
+2560Engine.bootloader.high_fuses=0xD8
+2560Engine.bootloader.extended_fuses=0xFD
+2560Engine.bootloader.file=2560Engine.hex
+2560Engine.bootloader.unlock_bits=0x3F
+2560Engine.bootloader.lock_bits=0x0F
+
+2560Engine.build.f_cpu=16000000L
+2560Engine.build.core=AdaptinoCustomCore
+2560Engine.build.variant=2560Engine
+2560Engine.build.mcu=atmega2560
+2560Engine.build.board=AVR_2560_ENGINE

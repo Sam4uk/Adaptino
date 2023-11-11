@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: package
-        run: zip -qq -r "Adaprino.zip" "Adaptino"
+        run: zip -qq -r "Adaptino.zip" "Adaptino"
 
       - name: json
         run: |

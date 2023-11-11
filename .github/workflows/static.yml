@@ -39,7 +39,8 @@ jobs:
         run: |
           cat << EOF > "package_Adaprino_index.json"
           {
-            "packages": [
+            "packages":
+            [
               {
                 "name": "Adaprino",
                 "maintainer": "Sam4uk",
@@ -48,21 +49,25 @@ jobs:
                 "help": {
                   "online": ""
                 },
-                "platforms": [
-                  "name": "Adaptino",
-                  "architecture": "avr",
-                  "version": "0.0.1",
-                  "help": {
-                    "online": ""
-                  },
-                  "url": "https://sam4uk.github.io/Adaptino/Adaptino.zip",
-                  "archiveFileName": "Adaptino.zip",
-                  "size" : "$(sha256sum "Adaptino.zip")",
-                  "boards": [
-                    {
-                      "name": "2560Engine"
-                    }
-                  ]
+                "platforms":
+                [
+                  {
+                    "name": "Adaptino",
+                    "architecture": "avr",
+                    "version": "0.0.1",
+                    "help": {
+                      "online": ""
+                    },
+                    "url": "https://sam4uk.github.io/Adaptino/Adaptino.zip",
+                    "archiveFileName": "Adaptino.zip",
+                    "size" : "$(sha256sum "Adaptino.zip")",
+                    "boards":
+                    [
+                      {
+                        "name": "2560Engine"
+                      }
+                    ]
+                  }
                 ]
               }
             ]

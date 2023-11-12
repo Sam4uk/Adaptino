@@ -44,35 +44,41 @@ jobs:
               {
                 "name": "Adaprino",
                 "maintainer": "Sam4uk",
-                "websiteURL": "https://sam4uk.github.io/Adaptino/",
+                "websiteUrl": "https://sam4uk.github.io/Adaptino/",
+                "Url": "https://sam4uk.github.io/Adaptino/package_Adaprino_index.json",
                 "email": "",
                 "help": {
                   "online": ""
                 },
-                "platforms":
+                "platforms": 
                 [
                   {
                     "name": "Adaptino",
                     "architecture": "avr",
                     "version": "0.0.1",
-                    "help": {
-                      "online": ""
-                    },
+                    "deprecated": false,
+                    "category": "",
                     "url": "https://sam4uk.github.io/Adaptino/Adaptino.zip",
                     "archiveFileName": "Adaptino.zip",
                     "size" : "$(stat -c %s Adaptino.zip)",
                     "checksum" : "SHA-256:$(sha256sum ./Adaptino.zip | awk '{print $1}')",
-                    "boards":
+                    "boards": 
                     [
                       {
                         "name": "2560Engine"
                       }
-                    ]
+                    ],
+                    "toolsDependencies": [],
+                    "discoveryDependencies": [],
+                    "monitorDependencies": []
                   }
-                ]
+                ],
+                "tools": [],
+                "help": {}
               }
-            ]
-          }
+            ],
+            "IsTrusted": false
+          }          
           EOF
 
       - name: Setup Pages
